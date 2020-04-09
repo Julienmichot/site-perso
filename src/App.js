@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import SkillsArticle from "./components/SkillsArticle";
+import Skills from "./components/Skills";
 import Course from "./components/Course";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <h1>YOLO</h1>
       <div className="content">
-        <SkillsArticle />
+        <Skills />
         <Course />
       </div>
     </div>

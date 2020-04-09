@@ -1,0 +1,54 @@
+p,
+span,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #535c68;
+}
+
+.title {
+}
+
+.subtitle {
+  display: inline;
+  font-size: small;
+}
+
+.year {
+  text-align: center;
+  margin: 10px;
+  color: #535c68;
+}
+
+.course {
+  width: 800px;
+  height: auto;
+}
+
+.infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.formation {
+  max-width: 360px;
+  margin: 5px;
+}
+
+.actually {
+  max-width: 360px;
+  margin: 5px;
+}
+.before {
+  max-width: 360px;
+  margin: 5px;
+}

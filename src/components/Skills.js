@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../styles/Skills.css";
 
 class Skills extends Component {
   state = {
@@ -6,48 +7,64 @@ class Skills extends Component {
       {
         nom: "JavaScript",
         url: "https://www.developpez.net/forums/attachments/p294178d1/a/a/a",
-        description: "Appris à l'IUT Utilisé pour réaliser ce site",
+        description: {
+          l1: "Appris à l'IUT",
+          l2: "Utilisé pour réaliser ce site",
+        },
         active: false,
       },
       {
         nom: "React",
         url:
           "https://blog.octo.com/wp-content/uploads/2015/12/react-logo-1000-transparent.png",
-        description: "Appris par moi-même",
+        description: {
+          l1: "Appris par moi-même",
+          l2: "Utilisé pour réaliser ce site",
+        },
         active: false,
       },
       {
         nom: "Java",
         url:
           "https://www.solutions-numeriques.com/wp-content/uploads/2016/03/java.png",
-        description: "Appris à l'IUT",
+        description: {
+          l1: "Appris à l'IUT",
+        },
         active: false,
       },
       {
         nom: "Langage C",
         url: "https://img.icons8.com/color/480/c-programming.png",
-        description: "Appris à l'IUT",
+        description: {
+          l1: "Appris à l'IUT",
+        },
         active: false,
       },
       {
         nom: "Android",
         url:
           "https://www.arobasyk.com/wp-content/uploads/2019/10/Android-Logo.png",
-        description: "Appris à l'IUT",
+        description: {
+          l1: "Appris à l'IUT",
+        },
         active: false,
       },
       {
         nom: "PostgreSQL",
         url:
           "https://dyltqmyl993wv.cloudfront.net/assets/stacks/postgresql/img/postgresql-stack-220x234.png",
-        description: "Appris à l'IUT",
+        description: {
+          l1: "Appris à l'IUT",
+        },
         active: false,
       },
       {
         nom: "VSCode",
         url:
           "https://websetnet.net/wp-content/uploads/2019/04/vscode-icon245.png",
-        description: "Utilisé pour la plupart des langages",
+        description: {
+          l1: "Utilisé pour la plupart des langages",
+        },
         active: false,
       },
     ],
@@ -69,7 +86,8 @@ class Skills extends Component {
     return (
       <div className="logoDescription">
         <h3>{language.nom}</h3>
-        <p>{language.description}</p>
+        <p>{language.description.l1}</p>
+        {language.description.l2 ? <p>{language.description.l2}</p> : null}
       </div>
     );
   };
