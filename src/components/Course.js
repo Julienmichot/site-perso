@@ -10,11 +10,11 @@ class Course extends Component {
         contenus: [
           {
             année: "2019 - 2020",
-            détails: "2nd année et obtention du diplôme.",
+            détails: "2e année et obtention du diplôme.",
           },
           {
             année: "2018 - 2019",
-            détails: "1ère année découverte de l'informatique.",
+            détails: "1ère année, découverte du Java.",
           },
         ],
       },
@@ -38,7 +38,7 @@ class Course extends Component {
         <div className="infos">
           {this.state.formations.map((formation) => (
             <div className="formation">
-              <h2>
+              <h2 className="title">
                 {formation.nom + " "}
                 <h4 className="subtitle">{formation.soustitre}</h4>
               </h2>

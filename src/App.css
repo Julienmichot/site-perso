@@ -2,9 +2,56 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  --mainTitleColor: #0b161c;
   --articleColor: #f3f3f3;
   --backgroundColor: #1b262c;
   font-family: "Baloo Thambi 2", cursive;
+}
+
+.presentation {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--articleColor);
+  background: var(--mainTitleColor);
+}
+
+.mainTitle {
+  margin: 0 10px;
+  font-size: 40px;
+}
+
+.mainInfos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personalInfos {
+  display: inline-block;
+  list-style: none;
+  margin: 10px;
+  text-align: end;
+}
+
+.linkedinIcon {
+  text-decoration: none;
+}
+
+.icon-linkedin {
+  font-size: 30px;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 10px;
 }
 
 .content {

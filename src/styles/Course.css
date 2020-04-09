@@ -7,13 +7,14 @@ h4 {
 }
 
 p {
-  margin: 0 20px;
+  margin: 0 35px;
   font-size: 18px;
   font-weight: normal;
   color: #535c68;
 }
 
 .title {
+  text-align: center;
 }
 
 .subtitle {
@@ -36,19 +37,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px 0;
 }
 
 .formation {
   max-width: 360px;
-  margin: 5px;
-}
-
-.actually {
-  max-width: 360px;
-  margin: 5px;
-}
-.before {
-  max-width: 360px;
-  margin: 5px;
+  margin: 20px 10px;
 }
